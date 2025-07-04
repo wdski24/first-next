@@ -41,9 +41,7 @@ function Forms() {
           value={firstName}
           changeFunction={setFirstName}
         />
-        <button onClick={() => setReservationConfirmation(true)}>
-          Stammkundenreservierung
-        </button>
+        <button onClick={() => {}}>Stammkundenreservierung</button>
       </div>
     );
   }

@@ -7,7 +7,7 @@ export default function Impressum() {
   return (
     <div>
       <main>
-        <h1>Impressum</h1>
+        <h1 className={styles.heading}>Impressum</h1>
         {/*https://nextjs.org/docs/app/getting-started/linking-and-navigating*/}
         <Link href='/'>Startseite</Link>
       </main>

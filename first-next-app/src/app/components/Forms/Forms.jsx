@@ -2,10 +2,14 @@
 'use client';
 import { useState } from 'react';
 import InputField from './InputField/InputField';
+import { useRouter } from 'next/navigation';
+
 function Forms() {
   const [name, setName] = useState('');
   const [firstName, setFirstName] = useState('');
   const [reservationConfirmation, setReservationConfirmation] = useState(false);
+  const router = useRouter();
+
   /**
    * Conditional Rendering mit Variablen und If-Else/Switch-Case Statement
    */
@@ -20,7 +24,7 @@ function Forms() {
         value={firstName}
         changeFunction={setFirstName}
       />
-      <button onClick={() => setReservationConfirmation(true)}>
+      <button onClick={() => router.push(`/checkout/${firstName}`)}>
         Reservieren
       </button>
     </div>

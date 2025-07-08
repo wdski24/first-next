@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import InputField from './InputField/InputField';
 import { useRouter } from 'next/navigation';
+import { createUser } from '@/app/actions';
 
 function Forms() {
   const [name, setName] = useState('');
@@ -41,7 +42,9 @@ function Forms() {
           value={firstName}
           changeFunction={setFirstName}
         />
-        <button onClick={() => {}}>Stammkundenreservierung</button>
+        <button onClick={() => createUser({ name: 'Max' })}>
+          Stammkundenreservierung
+        </button>
       </div>
     );
   }

@@ -11,7 +11,6 @@ export default function Home() {
         <HeadingAndButton heading='Heading' text='Text' buttonText='button' />
         {/*https://nextjs.org/docs/app/getting-started/linking-and-navigating*/}
         <Link href='/impressum'>Impressum</Link>
-
         <Forms />
       </main>
     </div>

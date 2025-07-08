@@ -36,12 +36,14 @@ export default HeadingAndButton
 *{key1, key2} ist die sogenannte Object Deconstruction. Ich nenne die Keys eines Objects und kann sie dann direkt verwenden
 */
 'use client';
+//Style Import um CSS-Klassen zu verwenden z.B grid, flexbox, schriftgrößen etc.
 import styles from './HeadingAndButton.module.css';
 
 const HeadingAndButton = ({ heading, text, buttonText, buttonClick }) => {
   return (
     //Binding eines Wertes an einen Tag
     <div>
+      {/**Style Klasse wird verbunden */}
       <h2 className={styles.heading}>{heading}</h2>
       <p>{text}</p>
       <button onClick={buttonClick}>{buttonText}</button>
